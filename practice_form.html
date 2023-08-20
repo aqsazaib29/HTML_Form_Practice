@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        .main{
+            width:580px;
+            height: 540px;
+            background-color: rgb(204, 199, 199);
+            margin: 0 auto;
+        
+        }
+        h1{
+            color:red;
+            padding: 4% 0% 1% 5%; 
+            
+        }
+        table{
+            margin:2% 2% 2% 2% ;
+        }
+        table,td,th{
+            border: 1px solid;
+            background-color: rgb(200, 232, 248);
+
+        }
+        table,td{
+            width:550px;
+            height: 40px;
+        }
+        th{  
+            width:200px;
+            height: 40px; 
+        }
+        .btn{
+            padding:1% 0% 0% 40%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Continental Hotel Reservation Form</h1>
+    <table>
+        <tr>
+
+            <th><label for="name">Name</label></th>
+            <td><input type="file">
+                <input maxlength="20" type="text" name="name" id="name" placeholder="Enter your name here">
+            </td>
+    
+        </tr>
+        <tr>
+            <th><label for="email">Email</label></th>
+            <td><input type="email" name="email" id="email" placeholder="info@continental.pk"></td>
+        </tr>
+        <tr>
+            <th><label for="mobno">Mobile No</label></th>
+            <td><input type="number" name="mobno" id="mobno" placeholder="Enter your cell number"></td>
+        </tr>
+        <tr>
+            <th><label for="arr_time">Arrival Time</label></th>
+            <td><input type="Time" name="arr_time" id="arr_time" placeholder="Enter your arrival time"></td>
+        </tr>
+        <tr>
+            <th><label for="depart">Departure</label></th>
+            <td><input type="number" name="depart" id="depart"><input type="number" name="depart" id="depart"></td>
+        </tr>
+        <tr>
+            <th><label for="room">Room Type</label></th>
+            <td><input type="radio" name="room" id="room">Single
+                <input type="radio" name="room" id="room">Double<br/>
+                <input type="radio" name="room" id="room">Presidential Suite
+            </td>
+        </tr>
+        <tr>
+            <th><label for="pref">Preferences</label></th>
+            <td>
+                <input type="checkbox" name="pref" id="pref">Non-Smoking<br/>
+                <input type="checkbox" name="pref" id="pref">Internet<br/>
+                <input type="checkbox" name="pref" id="pref">Firm Matters
+            </td>
+        </tr>
+        <tr>
+            <th><label for="mp">Mode Of Payment</label></th>
+            <td>
+                <input type="checkbox" name="mp" id="mp">Cash
+                <input type="checkbox" name="mp" id="mp">Cheque<br/>
+                <input type="checkbox" name="mp" id="mp">Credit Card
+                <button>Select Card</button>
+            </td>
+        </tr> 
+        <tr>
+            <td  class="btn" colspan="2"><button>Send Data</button></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
